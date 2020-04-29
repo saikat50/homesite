@@ -14,7 +14,7 @@
     <div class="grid-4-8-4 " id="mainheader">
         <div>&nbsp;</div>
         <div>
-            <h1>Saved flat/house share ads</h1></div>
+            <h1>Saved flatmate ads</h1></div>
         <div>&nbsp;</div>
     </div>
     <div class="grid-4-8-4">
@@ -31,11 +31,11 @@
                             <ul>
                                 <li>
                                     <label title="Rooms for Rent in existing flatshares">
-                                        <input type="radio" name="flatshare_type" CHECKED value="offered"> Rooms for Rent </label>
+                                        <input type="radio" name="flatshare_type" value="offered"> Rooms for Rent </label>
                                 </li>
                                 <li>
                                     <label title="Potential flatmates and tenants seeking accommodation">
-                                        <input type="radio" name="flatshare_type" value="wanted" class="radiobuttons"> Rooms Wanted </label>
+                                        <input type="radio" name="flatshare_type" CHECKED value="wanted" class="radiobuttons"> Rooms Wanted </label>
                                 </li>
                                 <li>
                                     <label title="Find others seeking accommodation to form a new flatshare">
@@ -45,23 +45,7 @@
                         </div>
                         <div>
                             <label for="search_field"> <strong>Where?</strong> </label>
-                            <input type="text" name="search" value="" id="search_by_location_field" onFocus="if(this.value=='(e.g.Greenwich)'){this.value='';}" class="textbox" id="search_field" pattern=".*" required="" data-store-search-text autocomplete="off">
-                            <p>
-                                <select name="miles_from_max" id="radius">
-                                    <option value="0">This area only</option>
-                                    <option value="1">1 mile radius</option>
-                                    <option value="2">2 mile radius</option>
-                                    <option value="3">3 mile radius</option>
-                                    <option value="4">4 mile radius</option>
-                                    <option value="5">5 mile radius</option>
-                                    <option value="10">10 mile radius</option>
-                                    <option value="15">15 mile radius</option>
-                                    <option value="20">20 mile radius</option>
-                                    <option value="30">30 mile radius</option>
-                                    <option value="40">40 mile radius</option>
-                                </select>
-                            </p>
-                        </div>
+                            <input type="text" name="search" value="" id="search_by_location_field" onFocus="if(this.value=='(e.g.Greenwich)'){this.value='';}" class="textbox" id="search_field" pattern=".*" required="" data-store-search-text autocomplete="off"> </div>
                         <div class="foot">
                             <p> <a href="/flatshare/search.pl?searchtype=advanced" class="advanced_search">Advanced search</a> </p>
                             <input type="submit" class="button" value="Search again"> </div>
@@ -71,7 +55,7 @@
         </aside>
         <div id="maincontent">
             <div class="above_search_results">
-                <div class="panel-tab"> <a class="tab-active" href="{{route('User.Account-Saved-Ads')}}" title="rooms offered">Room to rent ads</a><a class="" href="{{route('User.Account-Saved-Ads-Room')}}" title="rooms wanted">Room wanted ads</a> </div>
+                <div class="panel-tab"> <a class="" href="{{route('User.Account-Saved-Ads')}}" title="rooms offered">Room to rent ads</a><a class="tab-active" href="{{route('User.Account-Saved-Ads-Room')}}" title="rooms wanted">Room wanted ads</a> </div>
                 <div class="searching_options">
                     <p id="results_header"> </p>
                     <p class="sort_by">
@@ -89,8 +73,8 @@
                                 <option value="">Default sort order</option>
                                 <option value="days_since_placed">Newest Ads</option>
                                 <option value="last_updated">Last updated</option>
-                                <option value="price_low_to_high">Price (lowest first)</option>
-                                <option value="price_high_to_low">Price (highest first)</option>
+                                <option value="price_low_to_high">Budget (lowest first)</option>
+                                <option value="price_high_to_low">Budget (highest first)</option>
                             </select>
                         </label>
                         <script type="text/javascript">
@@ -124,9 +108,6 @@
                         </script>
                     </p>
                 </div>
-                <div class="searching_options_btn">
-                    <p class="serching_opt"> <span class="total-ads">Showing <strong> 1-1 </strong> of <strong>1</strong> results</span> <a class="studentHIDE" data-ga-event-category="Google Maps (09 -11-16)" data-ga-event-action="map clicked" data-ga-event-label="saved advert list" href="/flatshare/?filter=shortlist&flatshare_type=offered&show_results=as+a+map"> Show results on a map <i class="fas fa-map-marker-alt"></i></a> </p>
-                </div>
                 <label class='select-all'>
                     <input type='checkbox' /> select all</label>
                 <!--REMEMBER!!!!
@@ -136,40 +117,40 @@ MOBILE SPAREROOM DOESNT USE THIS LIB FOR THE SAVED SEARCH STUFF BELOE
 -->
             </div>
             <form action="/flatshare/shortlist.pl" class="remove_multiple_saved_items">
-                <input type="hidden" name="flatshare_type" value="offered">
+                <input type="hidden" name="flatshare_type" value="wanted">
                 <ul class="listing-results ">
-                    <li class="listing-result" data-listing-id="12831421" data-listing-title="Edgbaston&#45;Superb&#32;Double&#32;En&#45;Suites&#45;All&#32;Inclusive&#32;" data-listing-brand="bold" data-listing-type="offered" data-listing-days-old="0" data-listing-available="Available Now" data-listing-status="new" data-listing-early-bird="" data-listing-neighbourhood="Edgbaston" data-listing-postcode="B17" data-listing-scp="" data-listing-property-type="house" data-listing-property-type-more="" data-listing-rooms-in-property="6" data-listing-advertiser-role="live out landlord">
+                    <li class="listing-result" data-listing-id="14998768" data-listing-title="3&#32;young&#32;professionals&#32;flat&#32;required&#33;" data-listing-brand="bold" data-listing-type="wanted" data-listing-days-old="1" data-listing-available="14 Jun" data-listing-status="new today" data-listing-early-bird="" data-listing-rooms-sought="Double room" data-listing-number-of-rooms="1" data-listing-example-matching-area="Zone 1, Zone 2 - North of the River, Zone 2 - South of the River" data-listing-gender-and-occupation="professional female">
                         <label class="selected-listing listing-bold-delete ">
-                            <input class="remove-listing listing_remove_checkbox " type="checkbox" name="remove_12831421" value="1"> select</label>
+                            <input class="remove-listing listing_remove_checkbox " type="checkbox" name="remove_14998768" value="1"> select</label>
                         <article class="panel-listing-result listing-bold  ">
-                            <header class="desktop"><a href="/flatshare/flatshare_detail.pl?flatshare_id=12831421&search_id=&city_id=&flatshare_type=offered&search_results=%2Fflatshare%2F%3Ffilter%3Dshortlist%26flatshare_type%3Doffered&" data-detail-url title="Edgbaston-Superb Double En-Suites-All Inclusive "><strong class="listingPrice">&pound;450- &pound;510<abbr title="">pcm</abbr><!-- each --><!-- 510 --></strong><h1>Edgbaston-Superb Double En-Suites-All Inclusive </h1><div class="pricingInfo"><em class="shortDescription">2 doubles<span class="listingLocation">Edgbaston (B17)</span></em><em class="listingPriceDetails">Bills inc.</em></div></a></header>
+                            <header class="desktop"><a href="/flatshare/flatmate_detail.pl?flatshare_id=14998768&search_id=&city_id=&summarised_location_matching_gs_id=77&flatshare_type=wanted&search_results=%2Fflatshare%2Frooms_wanted.pl%3Ffilter%3Dshortlist%26flatshare_type%3Dwanted&" data-detail-url title="3 young professionals flat required!"><strong class="listingPrice">&pound;700 <abbr title="per calendar month">pcm</abbr></strong><h1>3 young professionals flat required!</h1><div class="pricingInfo"><em class="shortDescription">Sofia, professional female 24</em><em class="listingPriceDetails">Double room</em></div></a></header>
                             <header class="mobile">
-                                <a href="{{route('User.Add-Details')}}" data-detail-url title="Edgbaston-Superb Double En-Suites-All Inclusive ">
-                                    <h1> Edgbaston-Superb Double En-Suites-All Inclusive </h1> </a>
+                                <a href="/flatshare/flatmate_detail.pl?flatshare_id=14998768&search_id=&city_id=&summarised_location_matching_gs_id=77&flatshare_type=wanted&search_results=%2Fflatshare%2Frooms_wanted.pl%3Ffilter%3Dshortlist%26flatshare_type%3Dwanted&" data-detail-url title="3 young professionals flat required!">
+                                    <h1> 3 young professionals flat required!</h1> </a>
                             </header>
                             <figure>
-                                <a href="/flatshare/flatshare_detail.pl?flatshare_id=12831421&search_id=&city_id=&flatshare_type=offered&search_results=%2Fflatshare%2F%3Ffilter%3Dshortlist%26flatshare_type%3Doffered&" data-detail-url><img src="//photos2.spareroom.co.uk/images/flatshare/listings/cw100h100/61/81/61812271.jpg" srcset="//photos2.spareroom.co.uk/images/flatshare/listings/cw100h100/61/81/61812271.jpg 1x, //photos2.spareroom.co.uk/images/flatshare/listings/cw200h200/61/81/61812271.jpg 2x" class="swiper-lazy" alt="Edgbaston-Superb Double En-Suites-All Inclusive  Main Photo">
-                                    <p class="media-details"><span><i class="fas fa-camera"></i> 9 </span><span><i class="fas fa-video"></i> 0 </span></p>
+                                <a href="/flatshare/flatmate_detail.pl?flatshare_id=14998768&search_id=&city_id=&summarised_location_matching_gs_id=77&flatshare_type=wanted&search_results=%2Fflatshare%2Frooms_wanted.pl%3Ffilter%3Dshortlist%26flatshare_type%3Dwanted&" data-detail-url>
+                                    <div class="no-uploads"><i class="fas fa-camera"></i>No Photos or video</div>
                                 </a>
                             </figure>
                             <div class="infoLabels">
-                                <mark class="new">New</mark>
+                                <mark class="new-today">New Today</mark>
                             </div>
                             <div class="pricingInfo mobile">
-                                <a href="/flatshare/flatshare_detail.pl?flatshare_id=12831421&search_id=&city_id=&flatshare_type=offered&search_results=%2Fflatshare%2F%3Ffilter%3Dshortlist%26flatshare_type%3Doffered&" data-detail-url title="Edgbaston-Superb Double En-Suites-All Inclusive "> <em class="shortDescription">2 doubles<span class="listingLocation">Edgbaston (B17)</span></em> <strong class="listingPrice">
-                                        &pound;450- &pound;510<abbr title="">pcm</abbr><!-- each --><!-- 510 -->      </strong> <em class="listingPriceDetails">
-                                        Bills inc.      </em> </a>
+                                <a href="/flatshare/flatmate_detail.pl?flatshare_id=14998768&search_id=&city_id=&summarised_location_matching_gs_id=77&flatshare_type=wanted&search_results=%2Fflatshare%2Frooms_wanted.pl%3Ffilter%3Dshortlist%26flatshare_type%3Dwanted&" data-detail-url title="3 young professionals flat required!"> <em class="shortDescription">Sofia, professional female 24</em> <strong class="listingPrice">
+                                        &pound;700 <abbr title="per calendar month">pcm</abbr>      </strong> <em class="listingPriceDetails">
+                                        Double room      </em> </a>
                             </div>
                             <div class="listing-results-content desktop">
-                                <a href="/flatshare/flatshare_detail.pl?flatshare_id=12831421&search_id=&city_id=&flatshare_type=offered&search_results=%2Fflatshare%2F%3Ffilter%3Dshortlist%26flatshare_type%3Doffered&" data-detail-url class="advertDescription">
-                                    <p class="description"> Located in Edgbaston this property has been refurbished to an exceptional standard. The rooms are furnished, double en-suites, off road parking...</p><strong>Available Now</strong></a>
+                                <a href="/flatshare/flatmate_detail.pl?flatshare_id=14998768&search_id=&city_id=&summarised_location_matching_gs_id=77&flatshare_type=wanted&search_results=%2Fflatshare%2Frooms_wanted.pl%3Ffilter%3Dshortlist%26flatshare_type%3Dwanted&" data-detail-url class="advertDescription">
+                                    <p class="description"> Hi there! We are 3 young professionals searching for a 3 double bedrooms flat in Zone 1/2 of London. We are able to move at the beginning of June,...</p><strong>Available 14 Jun</strong></a>
                             </div>
-                            <footer class="status_container"><span class="freeContact status"><span> Free to Contact </span></span><span class="tooltip savedAd"><a  class="tooltip savedAd" href="/flatshare/shortlist.pl?mode=edit&flatshare_id=12831421&flatshare_type=offered&search_results=%2Fflatshare%2F%3Ffilter%3Dshortlist%26flatshare_type%3Doffered"><i class="fas fa-star"></i><span> Saved</span></a><span class="tooltip_item"><span class="tooltip_box"><span class="tooltip_text">You have Saved this ad. Click the link to change its status. Check the box to remove multiple saved ads.</span><span class="tooltip_arrow">&nbsp;</span></span>
+                            <footer class="status_container"><span class="freeContact status"><span> Free to Contact </span></span><span class="tooltip savedAd"><a  class="tooltip savedAd" href="/flatshare/shortlist.pl?mode=edit&flatshare_id=14998768&flatshare_type=wanted&search_results=%2Fflatshare%2Frooms_wanted.pl%3Ffilter%3Dshortlist%26flatshare_type%3Dwanted"><i class="fas fa-star"></i><span> Saved</span></a><span class="tooltip_item"><span class="tooltip_box"><span class="tooltip_text">You have Saved this ad. Click the link to change its status. Check the box to remove multiple saved ads.</span><span class="tooltip_arrow">&nbsp;</span></span>
                                 </span>
-                                </span><a href="/flatshare/flatshare_detail.pl?flatshare_id=12831421&search_id=&city_id=&flatshare_type=offered&search_results=%2Fflatshare%2F%3Ffilter%3Dshortlist%26flatshare_type%3Doffered&" data-detail-url title="Advert details" class="more desktop"> More info </a></footer>
+                                </span><a href="/flatshare/flatmate_detail.pl?flatshare_id=14998768&search_id=&city_id=&summarised_location_matching_gs_id=77&flatshare_type=wanted&search_results=%2Fflatshare%2Frooms_wanted.pl%3Ffilter%3Dshortlist%26flatshare_type%3Dwanted&" data-detail-url title="Advert details" class="more desktop"> More info </a></footer>
                         </article>
                     </li>
-                    <li id="eventSearchItem" class="hidden event-item__type-offered">
+                    <li id="eventSearchItem" class="hidden event-item__type-wanted">
                         <style>
                             .event-item {
                                 margin-bottom: 24px;
@@ -244,7 +225,7 @@ MOBILE SPAREROOM DOESNT USE THIS LIB FOR THE SAVED SEARCH STUFF BELOE
                                 max-width: 244px;
                             }
                         </style>
-                        <a href="https://www.speedflatmating.co.uk/events/" class="event-item__link event-item__type-offered__link">
+                        <a href="https://www.speedflatmating.co.uk/events/" class="event-item__link event-item__type-wanted__link">
                             <!--
     -->
                             <div class="event-item__content">
@@ -255,7 +236,7 @@ MOBILE SPAREROOM DOESNT USE THIS LIB FOR THE SAVED SEARCH STUFF BELOE
                                 <div class="event-item__title">The flatmate finding event</div>
                                 <!--
       -->
-                                <div class="event-item__sub-title">Meet people with a room to let</div>
+                                <div class="event-item__sub-title">Meet lots of potential flatmates</div>
                                 <!--
     -->
                             </div>
@@ -267,7 +248,7 @@ MOBILE SPAREROOM DOESNT USE THIS LIB FOR THE SAVED SEARCH STUFF BELOE
             <div>
                 <ul class="navprev"> </ul>
                 <ul class="navnext"> </ul>
-                <p class="navcurrent"> Showing <strong> 1-1 </strong> of <strong>1</strong> results </p>
+                <p class="navcurrent"> Showing <strong> 1 - 1 </strong> of <strong>1</strong> results </p>
             </div>
         </div>
         <aside>
@@ -285,4 +266,5 @@ MOBILE SPAREROOM DOESNT USE THIS LIB FOR THE SAVED SEARCH STUFF BELOE
         </aside>
     </div>
 </main>
-    @endsection
+
+@endsection

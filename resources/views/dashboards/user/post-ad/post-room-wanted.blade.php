@@ -115,7 +115,7 @@
                                     <input type="hidden" name="show_interest_in" value="">
                                     <input type="hidden" name="show_interest_in_type" value="">
                                     <input type="hidden" name="fromwatchlist" value="">
-                                    <input type="hidden" name="original_search_string" value=""><button class="button wanted-step-1__continue-button" type="submit" name="submit">Next</button>			</div>
+                                    <input type="hidden" name="original_search_string" value=""><a href="{{route('User.Post-Room-Wanted_Step2')}}" class="button wanted-step-1__continue-button" type="submit" name="submit">Next</a>			</div>
                             </div>
 
                         </fieldset>

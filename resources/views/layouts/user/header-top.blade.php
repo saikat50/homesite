@@ -1,14 +1,5 @@
 <body class="PAGEmyaccount" id="SUBPAGEmyaccountoptions">
-<!-- Google Tag Manager (noscript) -->
-<noscript
-><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-WFTS7MZ"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden;"
-    ></iframe
-    ></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 
 <style>
     .statusMessage {
@@ -61,7 +52,7 @@
                         data-ga-event-action="clicked"
                         data-ga-event-label="header-SR-logo"
                     ><img
-                            src="//assets.spareroom.co.uk/img/logos/SpareRoom_header_logo.svg?v=1"
+                            src="{{asset('assets/img/brandmark-design.png')}}"
                             class="svg brand-header__logo"
                             alt="SpareRoom Logo"
                         /></a>

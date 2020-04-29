@@ -55,7 +55,7 @@
                         </div>
                         <div class="experiment-options">
                             <a
-                                href="/flatshare/find-postcode3.pl?desc=Free+Advert&amount=0&scp=N"
+                                href=""
                                 class="experiment-options__link"
                             >
                                 <div class="experiment-options__wrapper">
@@ -140,7 +140,7 @@
                             <div class="options__wrapper">
                                 <a
                                     id="optionsWrapperRoom"
-                                    href="/content/placeditadvert/listing-options/"
+                                    href="{{route('User.Post-Room-Rent')}}"
                                     class="options__item"
                                 >
                                     <p class="options__image">
@@ -168,7 +168,7 @@
                                 </a>
                                 <a
                                     id="optionsWrapperWholeProperty"
-                                    href="/content/placeditadvert/scp-options/"
+                                    href="{{route('User.Post-Whole-Property')}}"
                                     class="options__item"
                                 >
                                     <p class="options__image">
@@ -198,7 +198,7 @@
                                 </a>
                                 <a
                                     id="optionsWrapperRoomWanted"
-                                    href="/flatshare/wanted_listing_step1.pl"
+                                    href="{{route('User.Post-Room-Wanted')}}"
                                     class="options__item remove-border"
                                 >
                                     <p class="options__image">

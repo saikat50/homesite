@@ -64,7 +64,7 @@
                             </ul>
 
                             <p class="place_an_ad_now">
-                                <a class="button" href="/flatshare/find-postcode3.pl?desc=Free+Advert&amp;amount=0&amp;scp=Y">Post an ad now</a>
+                                <a class="button" href="{{route('User.Property-Step1')}}">Post an ad now</a>
                             </p>
 
                         </div>

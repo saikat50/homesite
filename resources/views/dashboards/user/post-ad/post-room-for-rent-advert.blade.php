@@ -58,7 +58,7 @@
                             </ul>
 
                             <p class="place_an_ad_now">
-                                <a class="button" href="/flatshare/find-postcode3.pl?desc=Free+Advert&amp;amount=0&amp;scp=N">Post an ad now</a>
+                                <a class="button" href="{{route('User.Room-rent-1')}}">Post an ad now</a>
                             </p>
 
                         </div>
@@ -98,7 +98,7 @@
                                 </li>
                             </ul>
 
-                            <p class="place_an_ad_now"><a class="button" href="/flatshare/find-postcode3.pl?desc=Bold+Advert&amp;amount=10&amp;scp=N">Post an ad now</a>				</p>
+                            <p class="place_an_ad_now"><a class="button" href="{{route('User.Room-rent-1')}}">Post an ad now</a>				</p>
                         </div>
                     </div>
                 </div>

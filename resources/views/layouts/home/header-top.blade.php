@@ -5,7 +5,7 @@
         <div class="brand-header" id="header">
             <div class="brand-header__content">
                 <div class="brand-header__logo-wrapper">
-                    <a href="#" class="brand-header__logo-link" data-ga-event-category="Home Links" data-ga-event-action="clicked" data-ga-event-label="header-SR-logo"><img src="//assets.spareroom.co.uk/img/logos/SpareRoom_header_logo.svg?v=1" class="svg brand-header__logo" alt="SpareRoom Logo"></a>
+                    <a href="#" class="brand-header__logo-link" data-ga-event-category="Home Links" data-ga-event-action="clicked" data-ga-event-label="header-SR-logo"><img src="{{asset('assets/img/brandmark-design.png')}}" class="svg brand-header__logo" alt="SpareRoom Logo"></a>
                 </div>
                 <div class="brand-header__middle-modals">
                     <div class="locale-choice" data-overlay-close-exempt="true">

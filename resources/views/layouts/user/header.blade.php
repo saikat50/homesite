@@ -5,7 +5,7 @@
         -->
             <li class="nav-bar__menu-item">
                 <a
-                    href="/flatshare/search.pl"
+                    href="{{route('User.Basic-Search')}}"
                     title="Search SpareRoom for a property or tenant"
                     class="nav-bar__link nav-bar__link--search"
                 >
@@ -50,7 +50,7 @@
         -->
             <li class="nav-bar__menu-item">
                 <a
-                    href="/flatshare-house-share/uk/"
+                    href="{{route('User.Browse')}}"
                     title="Rooms for rent in your area"
                     class="nav-bar__link nav-bar__link--browse"
                 >
@@ -65,7 +65,7 @@
         -->
             <li class="nav-bar__menu-item">
                 <a
-                    href="/flatshare/get_early_bird.pl?M_context=78"
+                    href="{{route('User.Account-Show-Upgrade')}}"
                     title="Upgrade your account"
                     class="nav-bar__link nav-bar__link--upgrade"
                 >

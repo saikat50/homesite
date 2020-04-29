@@ -20,6 +20,10 @@ class AccountController extends Controller
         return view($this->viewPath . 'saved-ads');
     }
 
+    public function show_saved_ads_room_wanted(){
+        return view($this->viewPath . 'saved-ads-room-wanted');
+    }
+
     public function show_saved_searches(){
         return view($this->viewPath . 'saved-searches');
     }
@@ -46,6 +50,10 @@ class AccountController extends Controller
 
     public function show_upgrade(){
         return view($this->viewPath . 'upgrade');
+    }
+
+    public function ad_details(){
+        return view($this->viewPath . 'ad-details');
     }
 
 }
